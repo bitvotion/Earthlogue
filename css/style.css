@@ -59,3 +59,22 @@ header {
 .nav-links a:hover {
     color: #3498db;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav links {
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+        display: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar.open .nav-links {
+        display: flex;
+    }
+}

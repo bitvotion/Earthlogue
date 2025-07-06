@@ -32,7 +32,7 @@ header {
 /* logo */
 
 .logo img {
-    height: 50px;
+    height: 40px;
     width: auto;
     display: block;
 }
@@ -59,6 +59,23 @@ header {
 .nav-links a:hover {
     color: #3498db;
 }
+
+/* Subscribe Button */
+
+.subscribe-btn {
+    background-color: #ffffffc0;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 0 10px #c0b4f3, 0 0 10px #eb93e3;
+}
+
+ .nav-links a.subscribe-btn:hover{
+     color: #ffffff; /* Yellow glow font color */
+    background-color: #63c1ff;
+ }
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -311,4 +328,122 @@ header {
 
 .social-links a:hover{
     color: #3498db;
+}
+
+/* Subscribe Page Style */
+
+.subscribe-body{
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #f1f6fa, #eaf4ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.form-container{
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;    
+}
+
+.form-container h2{
+    color: #3B4D61;
+    margin-bottom: 1rem;
+}
+
+.form-container p{
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.form-container input{
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.form-container button{
+    background-color: #63c1ff;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-container button:hover{
+    background-color: #41b2fd;
+}
+
+/* Sign in using Social Links */
+.or-divider{
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+    color: #888;
+    position: relative;
+    text-align: center;
+}
+
+.or-divider::before,
+.or-divider::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.or-divider::before{
+    left: 0;
+}
+
+.or-divider::after{
+    right: 0;
+}
+
+.social-login{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.google-btn,
+.facebook-btn{
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.google-btn{
+    background-color: #db4537;
+}
+
+.google-btn:hover{
+    background-color: #c23321;
+}
+
+.facebook-btn{
+    background-color: #3b5998;
+}
+
+.facebook-btn:hover{
+    background-color: #2d3373;
 }
